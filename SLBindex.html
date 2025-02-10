@@ -1,0 +1,562 @@
+<!DOCtype html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>SIMPLY LOVELY BEAUTY BOUTIQUE</title>
+
+<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+
+    <audio id="song" loop>
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
+    
+      <script>
+        // Play the music when the user clicks anywhere on the page
+        window.addEventListener('click', () => {
+          document.getElementById("song").play();
+        });
+      </script>
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a hrefe="#" class="logo">Simply Lovely<span>B.</span></a> 
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#cart-section" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    </div>
+    
+</header>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>WELCOME TO</h3>
+        <span>SIMPLY LOVELY BEAUTY BOUTIQUE!</span> <br><br>
+        <p class="large-text"> We are specialized in lash, brow & beauty</p>
+        <a href="#services" class="btn">shop now</a>
+    </div>
+
+    <img src="spa.png" width="1000px">
+
+</section>
+<section class="about" id="about">
+    <h1 class="heading"> <span> about </span> us </h1>
+    <div class="row">
+    <div class="video-container">
+       <video src="vid2.mp4" loop autoplay muted></video> 
+     <h3>Simply Lovely Beauty</h3>  
+    </div>
+    <div class="content">
+        <h3>WELCOME !!</h3>
+        <p> offers a range of beauty services including lash and brow treatments, facials, massages, and makeup services for various occasions. 
+        </p>
+<br><br>
+        <h3>OPEN EVERYDAY</h3>
+        <p> 10 AM - 9PM 
+        </p>
+    
+
+        <br><br><br><br>
+        <center>
+    </div><div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60656.79869187707!2d110.26241234497776!3d1.5319535041280008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fb09de05b92ff7%3A0xf94a710c314f1510!2sSimply%20Lovely%20Boutique!5e1!3m2!1sen!2smy!4v1736323536015!5m2!1sen!2smy" 
+        width="900" height="400" style="border:0;" allowfullscreen="
+        " loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div></center>
+</div>
+</section>
+
+
+
+<!-- services section starts -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> latest <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" id="service-1">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="ft3.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-1')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Facial Treatment</h3>
+                <div class="price"> RM79.20 <span>RM88</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-2">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="lash.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-2')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Lash Filler</h3>
+                <div class="price"> RM 67<span>RM89</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-3">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="extension.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-3')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Eyelash Extension</h3>
+                <div class="price"> RM62 <span>RM69</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-4">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="henna.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-4')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Brow Henna</h3>
+                <div class="price"> RM75.65 <span>RM89</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-5">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="shaping.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-5')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Brow Shaping</h3>
+                <div class="price"> RM23.75 <span>RM25</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-6">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="removal.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-6')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Extension Removal</h3>
+                <div class="price"> RM25.50 <span>RM30</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-7">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="guasha.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-7')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Guasha Facial</h3>
+                <div class="price"> RM79.20 <span>RM88</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-8">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="acne.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-8')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Treatment Facial (Acne)</h3>
+                <div class="price"> RM79.20 <span>RM88</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-9">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="makeup1.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-9')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Solemnization Makeup</h3>
+                <div class="price"> RM315 <span>RM350</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="service-10">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="engagement.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#services" class="cart-btn" onclick="addToCart('service-10')">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Engagement Makeup</h3>
+                <div class="price"> RM212.50 <span>RM250</span></div>
+            </div>
+        </div>
+        <!-- Repeat for all service boxes -->
+
+    </div>
+
+    <div id="cart-section">
+        <h1>Your Cart</h1>
+        <ul id="cart-items"></ul>
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- JavaScript for Cart Functionality -->
+<script>
+    const cart = [];
+
+    function addToCart(serviceId) {
+        const serviceBox = document.getElementById(serviceId);
+        const serviceName = serviceBox.querySelector('.content h3').innerText;
+        const servicePrice = serviceBox.querySelector('.content .price').innerText;
+
+        // Add item to cart array
+        cart.push({ id: serviceId, name: serviceName, price: servicePrice });
+
+        // Update cart display
+        updateCartDisplay();
+    }
+
+    function removeFromCart(serviceId) {
+        // Remove item from cart array
+        const index = cart.findIndex(item => item.id === serviceId);
+        if (index !== -1) cart.splice(index, 1);
+
+        // Update cart display
+        updateCartDisplay();
+    }
+
+    function updateCartDisplay() {
+        const cartItems = document.getElementById('cart-items');
+        cartItems.innerHTML = ''; // Clear existing cart items
+
+        cart.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                ${item.name} - ${item.price}
+                <button onclick="removeFromCart('${item.id}')">Remove</button>
+            `
+            cartItems.appendChild(listItem);
+        });
+    
+    cartTotal.innerText = total.toFixed(2); // Update total price
+    }
+
+</script>
+<script> 
+     function checkout() {
+        if (cart.length === 0) {
+            alert('Your cart is empty. Please add items to the cart before checking out.');
+            return;
+        }
+
+        const total = cart.reduce((sum, item) => sum + item.price, 0).toFixed(2);
+
+        alert(`Thank you for your purchase! Your total is $${total}.`);
+        cart.length = 0; // Clear the cart
+        updateCartDisplay();
+    }
+</script>
+
+
+
+    
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="user">
+                        <img src="sha11.png" alt="">
+                        <div class="user-info">
+                            <h3>Rasyariena H.</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <p>Did eyelash lifting services with SLB and it's super amazing cuz my eyelash stay lifted for almost 2 and half months!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="user">
+                        <img src="cat.png" alt="">
+                        <div class="user-info">
+                            <h3>Syasya</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <p>Good service!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="user">
+                        <img src="sha6.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Alicia</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <p>The service was good and the staff was friendly to us.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="user">
+                        <img src="brow.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Miranda</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <p>Incredible experience! The face wash was heavenly, and so refreshing. Highly recommend.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="user">
+                        <img src="gua-sha.png" alt="">
+                        <div class="user-info">
+                            <h3>Crystal</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <p>The staff is friendly, the facial is nice but I hope they improve their time management.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="user">
+                        <img src="catss.jpeg" alt="">
+                        <div class="user-info">
+                            <h3>Zionnee</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <p>Good</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span> contact </span> us </h1>
+    
+        <div class="row">
+    
+            <form id="contact-form" action="javascript:void(0);">
+                <input type="text" placeholder="name" class="box" id="name" required>
+                <input type="email" placeholder="email" class="box" id="email" required>
+                <input type="number" placeholder="number" class="box" id="number" required>
+                <textarea name="" class="box" placeholder="message" id="message" cols="30" rows="10" required></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+    
+            <div class="image">
+                <img src="brush.png" alt="">
+            </div>
+    
+        </div>
+    </section>
+    
+    <script>
+        // JavaScript to handle form submission
+        const form = document.getElementById('contact-form');
+    
+        form.addEventListener('submit', function (e) {
+            // Prevent default form action (optional as form uses "javascript:void(0)")
+            e.preventDefault();
+    
+            // Display success alert
+            alert('Message Successfully Sent!');
+    
+            // Optionally, clear the form fields
+            form.reset();
+        });
+    </script>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+    
+                <!-- About Section -->
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>We offer the best services and products, ensuring quality and satisfaction for all our customers.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#review">Review</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Section -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +6016-869 1028</li>
+                        <li><i class="fas fa-envelope"></i> simplylovelybeauty@yahoo.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kuching, Sarawak, Malaysia</li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Section -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/simplylovelyboutique?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/simplylovelybeauty?igsh=MXN3d2lsMnNoaDk1cQ=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="footer-bottom">
+                <center>
+                <p>&copy; 2025 Simply Lovely Beauty . All Rights Reserved.</p>
+                </center>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+</body>
+
+</html>
